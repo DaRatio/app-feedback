@@ -1,0 +1,51 @@
+name: Feedback Report
+description: Share feedback or report an issue with the mobile app
+title: "[Feedback]: "
+labels: ["feedback"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing! Share anything that looked off, felt confusing, or didn’t behave the way you expected.
+
+  - type: input
+    id: device
+    attributes:
+      label: Device model
+      placeholder: "Pixel 7, Samsung S22, etc."
+    validations:
+      required: true
+
+  - type: input
+    id: android_version
+    attributes:
+      label: Android version
+      placeholder: "Android 13"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What did you notice?
+      placeholder: "Describe what you saw, what you expected, or any general feedback."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps (if applicable)
+      placeholder: "1. Open the app\n2. Tap X\n3. Something unexpected happens"
+    validations:
+      required: false
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or logs (optional)
+      placeholder: "Paste logs or attach screenshots"
+    validations:
+      required: false
