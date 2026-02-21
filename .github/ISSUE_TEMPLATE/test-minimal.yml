@@ -1,0 +1,11 @@
+name: Test Minimal Form
+description: Minimal form to verify GitHub detection
+title: "[Test]: "
+labels: ["test"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you see this, Issue Forms are working.
